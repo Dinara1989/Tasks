@@ -16,7 +16,6 @@ const App = () => {
   // const mySecondSubscriber = () => {
   //     console.log('Hello, Im Hro')
   // }
-
   const foo1=()=> {
     console.log(100200)
   }
