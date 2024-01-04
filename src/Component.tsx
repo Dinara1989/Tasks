@@ -8,6 +8,8 @@ type StudentType = {
     id: number
     name: string
     age: number
+
+
 }
 const Component = (props:ComponentType) => {
     const topCars = [
