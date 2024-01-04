@@ -1,7 +1,7 @@
 import React from 'react';
 
 type ComponentType = {
-    students: Array<StudentType>
+    students: Array<StudentType> //один з варінтів
     // students: StudentType[] //інший варіант написання
 }
 type StudentType = {
