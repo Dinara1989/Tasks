@@ -2,7 +2,8 @@ import React from 'react';
 import Header from "./site/Header";
 import Body from "./site/Body";
 import Footer from "./site/Footer";
-import Component from "./Component";
+import Component from "./components/Component";
+import Button from "./components/Button";
 
 const students = [
   {id: 1, name:'Dinara', age: 35},
@@ -25,16 +26,31 @@ const App = () => {
   const onClickHandler = (name:string) => {
     console.log(name)
   }
+
+  const Button1Foo=(subscriber:string, age:number, address:string)=>{
+      console.log(subscriber, age, address)
+  }
+  const Button2Foo=(subscriber: string, age:number, address:string)=>{
+      console.log(subscriber, age, address)
+  }
+  const Foo3 =()=>{
+        console.log('Im stupid button')
+  }
   return (
       <div>
-        <button onClick={foo1}>1</button>
-        <button onClick={() => foo2(10020)}>2</button>
-        <button onClick={(event) => onClickHandler('Dinara')}> My YouTube Chanel 1</button>
-        <button onClick={(event) => onClickHandler('Hro')}>My YouTube Chanel 2</button>
-        <Header title={'First'}/>
-        <Body titleBody={'Here is some content'}/>
-        <Component students={students}/> //here I practised map method
-        <Footer titleFooter={'Here is some info about our company'}/>
+          <Button name={'Button 1'} callBack={()=>Button1Foo('Me Dinara', 35, 'from Ukraine')}/>
+          <Button name={'Button 1'} callBack={()=>Button2Foo('Me Hro', 43, 'from Lebanon')}/>
+          <Button name={'Stupid Button'} callBack={Foo3}/>
+          <Header title={'First'}/>
+          <Body titleBody={'Here is some content'}/>
+          {/*//here I practised map method*/}
+          <Component students={students}/>
+          <Footer titleFooter={'Here is some info about our company'}/>
+          <button onClick={foo1}>1</button>
+          <button onClick={() => foo2(10020)}>2</button>
+          <button onClick={(event) => onClickHandler('Dinara')}> My YouTube Chanel 1</button>
+          <button onClick={(event) => onClickHandler('Hro')}>My YouTube Chanel 2</button>
+
       </div>
   );
 };

@@ -43,7 +43,7 @@ const Component = (props:ComponentType) => {
                 {/*    )*/}
                 {/*})}*/}
 
-                //Optimized
+                {/*//Optimized*/}
                 {topCars.map(({manufacturer, model}: CarsType, index) => (
                     <tr key={manufacturer + model}>
                         <th>{manufacturer}</th>
