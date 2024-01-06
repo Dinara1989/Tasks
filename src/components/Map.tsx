@@ -1,6 +1,6 @@
 import React from 'react';
 
-type ComponentType = {
+type MapType = {
     students: Array<StudentType> //один з варінтів
     // students: StudentType[] //інший варіант написання
 }
@@ -11,7 +11,7 @@ type StudentType = {
 
 
 }
-const Component = (props:ComponentType) => {
+const Map = (props:MapType) => {
     const topCars = [
         {manufacturer:'BMW', model:'m5cs'},
         {manufacturer:'Mercedes', model:'e63s'},
@@ -56,4 +56,4 @@ const Component = (props:ComponentType) => {
     );
 };
 
-export default Component;
+export default Map;

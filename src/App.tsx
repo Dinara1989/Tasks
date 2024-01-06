@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import Header from "./site/Header";
 import Body from "./site/Body";
 import Footer from "./site/Footer";
-import Component from "./components/Component";
+import Map from "./components/Map";
 import Button from "./components/Button";
-import Filter from "./components/Filter";
+import Filter from "./components/filter/Filter";
 import Hook from "./components/Hook";
 
 const students = [
@@ -47,8 +47,7 @@ const App = () => {
           <Button name={'Stupid Button'} callBack={Foo3}/>
           <Header title={'First'}/>
           <Body titleBody={'Here is some content'}/>
-          {/*//map method*/}
-          <Component students={students}/>
+          <Map students={students}/>
           <Footer titleFooter={'Here is some info about our company'}/>
           <button onClick={foo1}>1</button>
           <button onClick={() => foo2(10020)}>2</button>
