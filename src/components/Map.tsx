@@ -8,8 +8,6 @@ type StudentType = {
     id: number
     name: string
     age: number
-
-
 }
 const Map = (props:MapType) => {
     const topCars = [
