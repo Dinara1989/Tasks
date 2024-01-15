@@ -1,4 +1,3 @@
-import React, {useState} from 'react';
 import Header from "./site/Header";
 import Body from "./site/Body";
 import Footer from "./site/Footer";
@@ -6,12 +5,15 @@ import Map from "./components/Map";
 import Button from "./components/Button";
 import Filter from "./components/filter/Filter";
 import Hook from "./components/Hook";
+import FullInput from "./components/inputUni/FullInput";
+import React, {useState} from "react";
 
 const students = [
   {id: 1, name:'Dinara', age: 35},
   {id: 2, name:'Hrayr', age: 43},
   {id: 3, name:'Rocky', age: 3}
 ]
+
 const App = () => {
   const myFirstSubscriber = () => {
       console.log('Hello, Im Dinara')
@@ -54,6 +56,7 @@ const App = () => {
           <button onClick={(event) => onClickHandler('Dinara')}> My YouTube Chanel 1</button>
           <button onClick={(event) => onClickHandler('Hro')}>My YouTube Chanel 2</button>
           <Filter />
+          <FullInput />
       </div>
   );
 };
