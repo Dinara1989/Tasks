@@ -6,7 +6,8 @@ import Button from "./components/Button";
 import Filter from "./components/filter/Filter";
 import Hook from "./components/Hook";
 import FullInput from "./components/inputUni/FullInput";
-import React, {useState} from "react";
+import OnOff from "./components/onOff/OnOff";
+import Accordion from "./components/selfControlledAccordion/Accordion";
 
 const students = [
   {id: 1, name:'Dinara', age: 35},
@@ -57,6 +58,10 @@ const App = () => {
           <button onClick={(event) => onClickHandler('Hro')}>My YouTube Chanel 2</button>
           <Filter />
           <FullInput />
+          <OnOff />
+          <OnOff />
+          <Accordion titleValue={"Menu"}/>
+          <Accordion titleValue={"Users"}/>
       </div>
   );
 };
