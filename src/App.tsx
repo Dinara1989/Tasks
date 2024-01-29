@@ -1,3 +1,4 @@
+import './App.css';
 import Header from "./site/Header";
 import Body from "./site/Body";
 import Footer from "./site/Footer";
@@ -8,6 +9,7 @@ import Hook from "./components/Hook";
 import FullInput from "./components/inputUni/FullInput";
 import OnOff from "./components/onOff/OnOff";
 import Accordion from "./components/selfControlledAccordion/Accordion";
+import Rating from "./components/selfControlledRating/Rating";
 
 const students = [
   {id: 1, name:'Dinara', age: 35},
@@ -43,7 +45,7 @@ const App = () => {
   }
 
   return (
-      <div>
+      <div className={'App'}>
           <Hook />
           <Button name={'Button 1'} callBack={()=>Button1Foo('Me Dinara', 35, 'from Ukraine')}/>
           <Button name={'Button 1'} callBack={()=>Button2Foo('Me Hro', 43, 'from Lebanon')}/>
@@ -62,6 +64,7 @@ const App = () => {
           <OnOff />
           <Accordion titleValue={"Menu"}/>
           <Accordion titleValue={"Users"}/>
+          <Rating />
       </div>
   );
 };
